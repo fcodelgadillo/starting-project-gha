@@ -50,6 +50,6 @@ jobs:
       - name: Output Contents
         run: ls dist  # List the contents of 'dist' directory where build files are stored
       - name: Output filename
-        run: echo "Filename: ${{ needs.build.outputs.script-file }}"  # Output the script file name
+        run: echo "${{ needs.build.outputs.script-file }}"  # Output the script file name
       - name: Deploy
         run: echo "Deploying..."  # Replace with actual deployment steps
